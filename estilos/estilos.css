@@ -20,7 +20,9 @@ font-family: 'Roboto Slab', serif; */
 
 body{
     width: 100%;
+    height: 100vh;
     background-color: #044B7F;
+    background-image: linear-gradient(#044B7F, 70%, #053654);
     color: white;
     display: block;
     font-family: 'Roboto Slab';
@@ -45,6 +47,7 @@ body{
     width: 100%;
     color: black;
     background-color:#E3B505;
+    background-image: linear-gradient(#E3B505 70%, #B79011);
     box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.5);    
 }
 
@@ -121,10 +124,15 @@ body{
 }
 
 
-.boardgame img{
+#mapa{
     width: 400px;
     margin-top: 50px;
     height: auto;
+}
+
+.characters,.dado img{
+    width: 0px;
+
 }
 
 /* BOTONES */
@@ -140,6 +148,8 @@ body{
     padding: 8px;
     border-radius: 8px;
     box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    transition: all 0.3s;
 
 }
 
@@ -150,6 +160,8 @@ body{
 
 .boton-principal:hover{
     color: white;
+    transform: scale(1.2);
+
 }
 
 .footer{
@@ -231,6 +243,7 @@ body{
 }
 
 .entrada:focus{
+    transform: scale(1.1);
     border: 3px solid #8c9a9e;
 }
 
@@ -340,9 +353,14 @@ body{
     .nav__ul li{
         font-size: 14px;
     }
-    .boardgame img{
+    #mapa{
             width: 500px;
         }
+
+    .characters, .dado img{
+        width: 0px;
+    
+    }
     
     #quienesSomos h2{
             font-size: 42px;
@@ -458,10 +476,55 @@ body{
     }
 
     /* Imagen */
-
-    .boardgame img{
-        width: 500px;
+    #mapa{
+        width: 600px;
         margin-top: 150px;
+    }
+
+    /* PERSONAJES DEL MAPA */
+    
+    .characters{
+        width: 45px;
+        position: relative;
+        animation-name: personajes;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+
+    }
+
+    #mago{
+        bottom: 220px;
+        right: 100px;
+    }
+
+    #caballero{
+        bottom: 250px;
+        right: 210px;
+    }
+
+    /* DADO */
+
+    .dado img{
+        width: 30px;
+        transform: rotate(20deg);
+    }
+
+    .dado{
+        position: relative;
+        left: 380px;
+        bottom: 120px;
+    }
+    .dado img:hover{
+        animation-name: dado;
+        animation-duration: 3s;
+        animation-iteration-count: 2;
+        animation-direction: alternate;
+    }
+
+
+    #robin{
+        bottom: 280px ;
+        right: 320px;  
     }
 
     /* BOTONES */
@@ -518,5 +581,26 @@ body{
         width: 100%;
     }
 
+    /* Animacion para personajes que flotan */
+
+    @keyframes personajes {
+        0%{
+            transform: translate(0px, 0px);
+        }
+        50%{
+            transform: translate(0px,-10px);
+        }
+        100%{
+            transform: translate(0px, 0px);
+        }
+    }
+
+    /* Animación para el dado */
+
+    @keyframes dado {
+        100%{
+            transform: rotate(3turn) scale(1.5);
+        }            
+    }
 
 }

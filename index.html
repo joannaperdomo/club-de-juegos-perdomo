@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" href="estilos/estilos.css">
     <title>Meeple Gamers</title>
@@ -27,12 +28,18 @@
         </header>
         <main class="main">
             <div class="main__entrada">
-                <h2 class="main__entrada-titulo">Club de juegos de mesa</h2>
+                <h2 class="animate__animated animate__fadeIn main__entrada-titulo">Club de juegos de mesa</h2>
                 <p>Somos un grupo de amantes de juegos de mesa en la Ciudad de México. Organizamos noches de juegos en diferentes locaciones en la ciudad, campeonatos de juegos clásicos y préstamos de juegos de mesa dentro de la comunidad. Sé parte de nuestro grupo, ¡es gratis!</p><br>
                 <a class="boton-principal" href="pages/quienes-somos.html">Ver más</a>
              </div>
              <div class="boardgame">
-                <img src="img/boardgame.png" alt="Tablero de juego">
+                <img id="mapa" src="img/mapa.svg" alt="Tablero de juego">
+                <img class="characters" id='mago' src="img/mago.svg" alt="Mago del juego">
+                <img class="characters" id="caballero" src="img/caballero.svg" alt="Caballero del juego">
+                <img class="characters" id='robin' src="img/robin.svg" alt="Robin Hood en el juego">
+                <div class="dado">
+                    <img src="img/dice.png" alt="Dado">
+                </div>
              </div>
         </main>
         <footer class="footer">
