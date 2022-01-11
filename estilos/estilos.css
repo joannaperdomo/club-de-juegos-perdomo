@@ -117,7 +117,7 @@ body{
 }
 
 .main__entrada-titulo{
-    font-size: 46px;
+    font-size: 56px;
     font-family: 'Montserrat';
     margin-bottom: 10px;
 }
@@ -215,6 +215,15 @@ body{
     z-index: 2; 
 }
 
+#quienesSomos_parrafo h3, #quienesSomos_parrafo p, #quienesSomos_parrafo a{
+    padding-bottom: 10px;
+    color: white;
+}
+
+#quienesSomos_parrafo a:hover{
+    font-weight: bolder;
+}
+
 /* PÁGINA FORMULARIO */
 
 .contacto{
@@ -244,6 +253,7 @@ body{
 .entrada:focus{
     transform: scale(1.1);
     border: 3px solid #8c9a9e;
+    color: black;
 }
 
 input[type=radio]:checked + label {
@@ -599,83 +609,96 @@ input[type=radio]:checked + label {
 
 /* XL */
 
-    @media screen and (min-width: 1700px) {
-        /* MAIN */
-    
-        main{
-            height: 80vh;
-        }
-    
-        .main__entrada-titulo{
-            font-size: 68px;
-        }
-    
-        /* Imagen */
-            
-        #mapa{
-            width: 600px;
-        }
-    
-        #mago{
-            top: -300px;
-            left: -300px;
-        }
-    
-        #caballero{
-            top: -280px;
-            left: -300px;
-        }
-    
-        #princesa{
-            top: -320px;
-            left: -400px;
-    
-        }
-    
-        #robin{
-            top: -260px;
-            left: -300px;
-        }
-    
+@media screen and (min-width: 1700px) {
+    /* MAIN */
 
-    /* Animacion para personajes que flotan */
-
-    @keyframes personajes {
-        0%{
-            transform: translate(0px, 0px);
-        }
-        50%{
-            transform: translate(0px,-10px);
-        }
-        100%{
-            transform: translate(0px, 0px);
-        }
+    main{
+        height: 80vh;
     }
 
-    /* Animación para la princesa */
-    @keyframes princesa {
-        0%{
-            transform: translate(3px, 5px);
-        }
-
-        20%{
-            transform: translate(8px, 25px);
-        }
-
-        40%{
-            transform: translate(8px, 45px);
-        }
-
-        60%{
-            transform: translate(8px, 65px);
-        }
-
-        80%{
-            transform: translate(8px, 85px);
-        }
-        100%{
-            transform: translate(18px, 115px);
-        }
+    .main__entrada-titulo{
+        font-size: 68px;
     }
 
+    /* Imagen */
+        
+    #mapa{
+        width: 600px;
+    }
+
+    #mago{
+        top: -300px;
+        left: -300px;
+    }
+
+    #caballero{
+        top: -280px;
+        left: -300px;
+    }
+
+    #princesa{
+        top: -320px;
+        left: -400px;
+
+    }
+
+    #robin{
+        top: -260px;
+        left: -300px;
+    }
+
+    .nosotros{
+        justify-content: center; 
+    }
+
+    #quienesSomos_parrafo{
+        width: 40%;
+        margin: 50px;
+    }
+
+
+   #quienesSomos{
+        width: 50%;
+    }
+
+}
+
+/* Animacion para personajes que flotan */
+
+@keyframes personajes {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    50%{
+        transform: translate(0px,-10px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+/* Animación para la princesa */
+@keyframes princesa {
+    0%{
+        transform: translate(3px, 5px);
+    }
+
+    20%{
+        transform: translate(8px, 25px);
+    }
+
+    40%{
+        transform: translate(8px, 45px);
+    }
+
+    60%{
+        transform: translate(8px, 65px);
+    }
+
+    80%{
+        transform: translate(8px, 85px);
+    }
+    100%{
+        transform: translate(18px, 115px);
+    }
 }
