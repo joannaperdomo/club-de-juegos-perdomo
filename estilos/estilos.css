@@ -437,9 +437,6 @@ input[type=radio]:checked + label {
 /* DESKTOP */
 
 @media screen and (min-width: 1250px) {    
-    body{
-        height: 100vh;
-    }
 
     /* HEADER */
     .header{
