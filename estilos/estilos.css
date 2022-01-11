@@ -19,8 +19,11 @@ font-family: 'Roboto Slab', serif; */
     box-sizing: 0;
 }
 
-body{
+html{
     height: 100%;
+}
+
+body{
     background-color: #044B7F;
     background-image: linear-gradient(#044B7F, 70%, #053654);
     color: white;
@@ -284,7 +287,6 @@ input[type=radio]:checked + label {
     display: inline-block;
     margin: 0px 20px 20px 20px;
     padding: 10px;
-    width: 90%;
     font-size: 24px;
     text-align: center;
 }
@@ -567,7 +569,7 @@ input[type=radio]:checked + label {
     #somosh2{
         position: absolute;
         top: 250px;
-        left: 300px;
+        left: 230px;
         z-index: 2; 
     }
     
@@ -589,6 +591,16 @@ input[type=radio]:checked + label {
         display: flex;
         }
 
+    .evento img:hover{
+        filter: saturate(100%);
+    }
+
+    .evento p{
+        font-size: 16px;
+        margin: 5px;
+    }
+
+
     /* TIENDA PAGE */
 
     .container-tiendas{
@@ -603,7 +615,20 @@ input[type=radio]:checked + label {
     .tiendaImagen{
         width: 100%;
     }
+    .nosotros{
+        justify-content: center; 
     }
+
+    #quienesSomos_parrafo{
+        width: 40%;
+        margin: 50px;
+    }
+
+
+   #quienesSomos{
+        width: 50%;
+    }
+}
 
 /* XL */
 
@@ -643,20 +668,6 @@ input[type=radio]:checked + label {
     #robin{
         top: -260px;
         left: -250px;
-    }
-
-    .nosotros{
-        justify-content: center; 
-    }
-
-    #quienesSomos_parrafo{
-        width: 40%;
-        margin: 50px;
-    }
-
-
-   #quienesSomos{
-        width: 50%;
     }
 
 }
