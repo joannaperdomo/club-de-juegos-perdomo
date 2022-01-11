@@ -105,6 +105,12 @@ body{
     justify-content: space-around;
 }
 
+main h2{
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .main__entrada{
     margin-top: 60px;
     font-size: 16px;
@@ -129,9 +135,8 @@ body{
     height: auto;
 }
 
-.characters,.dado img{
+.characters{
     width: 0px;
-
 }
 
 /* BOTONES */
@@ -488,13 +493,6 @@ input[type=radio]:checked + label {
         text-align: left;
         display: inline-block;
         margin-right: 25px;
-    }
-
-    main h2{
-        font-size: 32px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        
     }
 
     main p{
