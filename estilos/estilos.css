@@ -628,12 +628,12 @@ input[type=radio]:checked + label {
 
     #mago{
         top: -300px;
-        left: -300px;
+        left: -250px;
     }
 
     #caballero{
         top: -280px;
-        left: -300px;
+        left: -250px;
     }
 
     #princesa{
@@ -644,7 +644,7 @@ input[type=radio]:checked + label {
 
     #robin{
         top: -260px;
-        left: -300px;
+        left: -250px;
     }
 
     .nosotros{
