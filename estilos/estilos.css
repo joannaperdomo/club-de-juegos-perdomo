@@ -111,9 +111,9 @@ body{
     text-align: left;
 }
 
-.contacto, .nosotros, .tiendas h2{
-    font-size: 24px;
-    margin: 25px 0px 15px 0px;
+.contacto, .nosotros, .stores h2{
+    margin: 30px 0px 20px 0px;
+    
 }
 
 .main__entrada-titulo{
@@ -220,6 +220,7 @@ body{
 .contacto{
     display: inline-block;
     margin-left: 10px;
+    margin-left: 20px;
 }
 
 #imagen-formulario{
@@ -244,6 +245,10 @@ body{
     transform: scale(1.1);
     border: 3px solid #8c9a9e;
 }
+
+input[type=radio]:checked + label {
+    font-weight: bolder;
+  } 
 
 .radiobutton{
     margin-bottom: 10px;
@@ -363,7 +368,7 @@ body{
         font-size: 14px;
     }
     #mapa{
-            width: 500px;
+            width: 600px;
         }
 
     .characters, .dado img{
@@ -476,8 +481,10 @@ body{
     }
 
     main h2{
-        font-size: 12px;
+        font-size: 32px;
+        margin-top: 10px;
         margin-bottom: 10px;
+        
     }
 
     main p{
@@ -588,46 +595,48 @@ body{
     .tiendaImagen{
         width: 100%;
     }
+    }
+
+/* XL */
 
     @media screen and (min-width: 1700px) {
-    /* MAIN */
-
-    main{
-        height: 80vh;
-    }
-
-    .main__entrada-titulo{
-        font-size: 68px;
-    }
-
-    /* Imagen */
-        
-    #mapa{
-        width: 600px;
-    }
-
-    #mago{
-        top: -300px;
-        left: -300px;
-    }
-
-    #caballero{
-        top: -280px;
-        left: -300px;
-    }
-
-    #princesa{
-        top: -320px;
-        left: -400px;
-
-    }
-
-    #robin{
-        top: -260px;
-        left: -300px;
-    }
-
-    }
+        /* MAIN */
+    
+        main{
+            height: 80vh;
+        }
+    
+        .main__entrada-titulo{
+            font-size: 68px;
+        }
+    
+        /* Imagen */
+            
+        #mapa{
+            width: 600px;
+        }
+    
+        #mago{
+            top: -300px;
+            left: -300px;
+        }
+    
+        #caballero{
+            top: -280px;
+            left: -300px;
+        }
+    
+        #princesa{
+            top: -320px;
+            left: -400px;
+    
+        }
+    
+        #robin{
+            top: -260px;
+            left: -300px;
+        }
+    
 
     /* Animacion para personajes que flotan */
 
