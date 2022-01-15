@@ -10,22 +10,41 @@
     <title>Meeple Gamers</title>
 </head>
 <body>
-    <div class="gridContainer">
-        <header class="header">
-            <h1 class="header__h1">🎲 Meeple Gamers 🎲</h1>
-            <nav class='header__nav'>
-                <ul class="nav__ul">
-                    <li><a href="pages/quienes-somos.html">Nosotros</a></li>
-                    <li><a href="pages/eventos.html">Eventos</a></li>
-                    <li><a href="pages/tiendas.html">Tiendas</a></li>
-                    <li><a href="pages/contacto.html">Contacto</a></li>
+    <header class="header container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <!-- MEEPLE GAMERS TÍTULO -->
+            <a class="navbar-brand" href="#">🎲 Meeple Gamers 🎲</a>
+            <!-- HAMBURGUESA -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navegador" aria-controls="navegador" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- NAVIGATION LINKS -->
+            <div class="collapse navbar-collapse" id="navegador">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="pages/nosotros.html" class="nav-link">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/tiendas.html" class="nav-link">Tiendas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Contacto</a>
+                    </li>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="http://instagram.com" target="_blank"><img class="nav__ul-img" src="img/icon/instagram.png" alt="Icono de Instagram"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="http://tiktok.com" target="_blank" ><img class="nav__ul-img" src="img/icon/tik-tok.png" alt="Icono de TikTok"></a>
+                        </li>
+                    </ul>
+
+
                 </ul>
-                <ul class="nav__ul nav__ul-redes">
-                    <li><a href="http://instagram.com" target="_blank"><img class="nav__ul-img" src="img/icon/instagram.png" alt="Icono de Instagram"></a></li>
-                    <li><a href="http://tiktok.com" target="_blank" ><img class="nav__ul-img" src="img/icon/tik-tok.png" alt="Icono de TikTok"></a></li>
-                </ul>
-            </nav>
-        </header>
+            </div>
+        </nav>      
+    </header>
+
         <main class="main">
             <div class="main__entrada">
                 <h2 class="animate__animated animate__fadeIn main__entrada-titulo">Club de juegos de mesa</h2>
