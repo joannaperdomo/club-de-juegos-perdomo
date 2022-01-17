@@ -22,10 +22,8 @@ body {
 .gridContainer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr auto auto;
-      grid-template-rows: 1fr auto auto;
+  -ms-grid-rows: 1fr minmax(500px, 8fr) 1fr;
+      grid-template-rows: 1fr minmax(500px, 8fr) 1fr;
   /* HEADER */
   /* MAIN */
   /* FOOTER */
@@ -125,9 +123,9 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
-  -ms-grid-row: 3;
+  -ms-grid-row: 4;
   -ms-grid-row-span: 1;
-  grid-row: 3 / 4;
+  grid-row: 4 / 5;
   font-size: 10px;
   text-align: right;
   padding-right: 20px;
@@ -209,6 +207,7 @@ main h2 {
   height: auto;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 
 #quienesSomos h2 {
@@ -381,9 +380,6 @@ input[type=radio]:checked + label {
 
 /* TABLETS AND SMALL SCREENS */
 @media screen and (min-width: 768px) {
-  body {
-    height: 100vh;
-  }
   /* HEADER */
   .header {
     padding: 10px 5px 10px 5px;
