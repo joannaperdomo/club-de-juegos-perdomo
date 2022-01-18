@@ -9,6 +9,14 @@ $gris: #8c9a9e;
 $negro: black;
 $blanco: white;
 
+/* COLORES DE REDES SOCIALES */
+
+$colores-redes: (
+    "youtube":#c4302b,
+    "instagram":#E1306C,
+    "twitter":#00acee,
+    "facebook":#4267B2,
+);
 
 /* FONT FAMILY */
 
@@ -192,7 +200,6 @@ main h2{
     height: auto;
     position: relative;
     z-index: 1;
-    overflow: hidden;
 
 }
 
@@ -208,6 +215,11 @@ main h2{
     position:absolute;
     top: 100px;
     z-index: 2;
+}
+
+.youtube{
+    color: map-get($colores-redes,"youtube");
+    font-weight: bold;
 }
 
 #somosh2{
@@ -519,26 +531,33 @@ input[type=radio]:checked + label {
     }
 
     /* PERSONAJES DEL MAPA */
-    
-    .characters{
+
+    @mixin characters {
         width: 45px;
         position: relative;
         animation-name: personajes;
         animation-duration: 3s;
-        animation-iteration-count: infinite;
-
+        animation-iteration-count: infinite; 
     }
 
     #mago{
+        @include characters;
         left: -200px;
         top: -250px;
     }
 
     #caballero{
+        @include characters;
         left: -200px;
         top: -230px;
     }
-
+    
+    #robin{
+        @include characters;
+        left: -200px;
+        top: -210px;
+    }
+    
     #princesa{
         width: 45px;
         position: relative;
@@ -547,11 +566,6 @@ input[type=radio]:checked + label {
         animation-name: princesa;
         animation-duration: 5s;
         animation-fill-mode: forwards;
-    }
-
-    #robin{
-        left: -200px;
-        top: -210px;
     }
 
     /* BOTONES */

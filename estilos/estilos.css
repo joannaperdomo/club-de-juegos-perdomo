@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@200;700;900&display=swap");
 /* Paleta de colores */
+/* COLORES DE REDES SOCIALES */
 /* FONT FAMILY */
 * {
   margin: 0;
@@ -207,7 +208,6 @@ main h2 {
   height: auto;
   position: relative;
   z-index: 1;
-  overflow: hidden;
 }
 
 #quienesSomos h2 {
@@ -222,6 +222,11 @@ main h2 {
   position: absolute;
   top: 100px;
   z-index: 2;
+}
+
+.youtube {
+  color: #c4302b;
+  font-weight: bold;
 }
 
 #somosh2 {
@@ -517,7 +522,7 @@ input[type=radio]:checked + label {
     margin-top: 50px;
   }
   /* PERSONAJES DEL MAPA */
-  .characters {
+  #mago {
     width: 45px;
     position: relative;
     -webkit-animation-name: personajes;
@@ -526,14 +531,32 @@ input[type=radio]:checked + label {
             animation-duration: 3s;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
-  }
-  #mago {
     left: -200px;
     top: -250px;
   }
   #caballero {
+    width: 45px;
+    position: relative;
+    -webkit-animation-name: personajes;
+            animation-name: personajes;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
     left: -200px;
     top: -230px;
+  }
+  #robin {
+    width: 45px;
+    position: relative;
+    -webkit-animation-name: personajes;
+            animation-name: personajes;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    left: -200px;
+    top: -210px;
   }
   #princesa {
     width: 45px;
@@ -546,10 +569,6 @@ input[type=radio]:checked + label {
             animation-duration: 5s;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-  }
-  #robin {
-    left: -200px;
-    top: -210px;
   }
   /* BOTONES */
   .boton-principal, .boton-borrar {
