@@ -33,6 +33,7 @@ body{
     height: 100%;
     background-color: $azulPrincipal;
     background-image: linear-gradient($azulPrincipal, 70%, #053654);
+    background-attachment: fixed;
     color: $blanco;
     display: block;
     font-family: $fuenteSecundaria;

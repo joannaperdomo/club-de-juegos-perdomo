@@ -15,6 +15,7 @@ body {
   background-color: #044b7f;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#044b7f), color-stop(70%), to(#053654));
   background-image: linear-gradient(#044b7f, 70%, #053654);
+  background-attachment: fixed;
   color: white;
   display: block;
   font-family: "Roboto Slab";
