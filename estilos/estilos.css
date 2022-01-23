@@ -12,7 +12,6 @@
 
 body {
   height: 100%;
-  background-color: #044b7f;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#044b7f), color-stop(70%), to(#053654));
   background-image: linear-gradient(#044b7f, 70%, #053654);
   background-attachment: fixed;
@@ -24,8 +23,8 @@ body {
 .gridContainer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr minmax(500px, 8fr) 1fr;
-      grid-template-rows: 1fr minmax(500px, 8fr) 1fr;
+  -ms-grid-rows: 1fr auto auto;
+      grid-template-rows: 1fr auto auto;
   /* HEADER */
   /* MAIN */
   /* FOOTER */
@@ -112,6 +111,7 @@ body {
   grid-row: 2 / 3;
   width: 80%;
   margin: auto;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,13 +125,14 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
-  -ms-grid-row: 4;
+  -ms-grid-row: 3;
   -ms-grid-row-span: 1;
-  grid-row: 4 / 5;
+  grid-row: 3 / 4;
   font-size: 10px;
   text-align: right;
   padding-right: 20px;
   padding-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .gridContainer .footer a {
@@ -201,6 +202,7 @@ main h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
 }
 
 #quienesSomos img {
@@ -297,6 +299,11 @@ input[type=radio]:checked + label {
   width: 100%;
   padding: 15px;
   color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .evento {
@@ -510,6 +517,9 @@ input[type=radio]:checked + label {
     text-align: left;
     display: inline-block;
     margin-right: 25px;
+  }
+  main {
+    height: 10000px;
   }
   .main__entrada-titulo {
     font-size: 48px;
