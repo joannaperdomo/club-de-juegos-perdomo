@@ -30,7 +30,6 @@ $fuenteSecundaria: 'Roboto Slab';
 }
 
 body{
-    height: 100%;
     background-image: linear-gradient($azulPrincipal, 70%, #053654);
     background-attachment: fixed;
     color: $blanco;
@@ -113,6 +112,7 @@ body{
         flex-wrap: wrap;
         justify-content: space-around;
     }
+
     /* FOOTER */
     .footer{
         grid-column: 1 / 2;
@@ -608,7 +608,9 @@ input[type=radio]:checked + label {
     /* PÁGINA FORMULARIO */
 
     #imagen-formulario img{
-        width: 500px;
+        width: 400px;
+        margin: 30px;
+        margin-top: 90px;
     }
     
     /* EVENTOS */
@@ -618,6 +620,7 @@ input[type=radio]:checked + label {
         }
 
     .evento{
+        width: 44%;
         img:hover{
             filter: saturate(100%);
         }
@@ -630,12 +633,16 @@ input[type=radio]:checked + label {
     /* TIENDA PAGE */
 
     .container-tiendas{
+        margin-top: 10px;
         display: flex;
-        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-around;
     }
 
     .tienda{
         display: block;
+        width: 320px;
     }
 
     .tiendaImagen{

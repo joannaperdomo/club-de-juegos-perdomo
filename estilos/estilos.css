@@ -11,7 +11,6 @@
 }
 
 body {
-  height: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#044b7f), color-stop(70%), to(#053654));
   background-image: linear-gradient(#044b7f, 70%, #053654);
   background-attachment: fixed;
@@ -603,13 +602,18 @@ input[type=radio]:checked + label {
   }
   /* PÁGINA FORMULARIO */
   #imagen-formulario img {
-    width: 500px;
+    width: 400px;
+    margin: 30px;
+    margin-top: 90px;
   }
   /* EVENTOS */
   .container__evento {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .evento {
+    width: 44%;
   }
   .evento img:hover {
     -webkit-filter: saturate(100%);
@@ -621,15 +625,19 @@ input[type=radio]:checked + label {
   }
   /* TIENDA PAGE */
   .container-tiendas {
+    margin-top: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 10px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .tienda {
     display: block;
+    width: 320px;
   }
   .tiendaImagen {
     width: 100%;
