@@ -410,6 +410,9 @@ input[type=radio]:checked + label {
     font-size: 14px;
   }
   /* HOME PAGE */
+  .gridContainer .home {
+    height: 600px;
+  }
   #mapa {
     width: 600px;
   }
