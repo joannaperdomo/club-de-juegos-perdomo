@@ -141,7 +141,7 @@ body{
 
 main h2{
     font-size: 32px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 .main__entrada-titulo{
@@ -338,6 +338,10 @@ input[type=radio]:checked + label {
     border-radius: 10px;
 }
 
+.tienda:hover{
+    box-shadow: 0px 0px 10px 5px rgb(150, 148, 148);
+}
+
 .tienda h3{
     font-weight: bolder;
     font-size: 24px;
@@ -351,10 +355,16 @@ input[type=radio]:checked + label {
 
 }
 
+.introduccion{
+    margin: 10px;
+    text-align: center;
+}
+
 .tienda__texto-info{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    margin-bottom: 6px;
 
 }
 
@@ -525,10 +535,6 @@ input[type=radio]:checked + label {
             display: inline-block;
             margin-right: 25px;
         }
-    }
-
-    main{
-        height: 10000px;
     }
 
     .main__entrada-titulo{

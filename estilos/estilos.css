@@ -147,7 +147,7 @@ body {
 
 main h2 {
   font-size: 32px;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -343,6 +343,11 @@ input[type=radio]:checked + label {
   border-radius: 10px;
 }
 
+.tienda:hover {
+  -webkit-box-shadow: 0px 0px 10px 5px #969494;
+          box-shadow: 0px 0px 10px 5px #969494;
+}
+
 .tienda h3 {
   font-weight: bolder;
   font-size: 24px;
@@ -355,6 +360,11 @@ input[type=radio]:checked + label {
   font-size: 14px;
 }
 
+.introduccion {
+  margin: 10px;
+  text-align: center;
+}
+
 .tienda__texto-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,6 +375,7 @@ input[type=radio]:checked + label {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin-bottom: 6px;
 }
 
 .tienda__texto-info img {
@@ -518,9 +529,6 @@ input[type=radio]:checked + label {
     text-align: left;
     display: inline-block;
     margin-right: 25px;
-  }
-  main {
-    height: 10000px;
   }
   .main__entrada-titulo {
     font-size: 48px;
