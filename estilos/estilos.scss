@@ -221,11 +221,6 @@ main h2{
     z-index: 2;
 }
 
-.youtube{
-    color: map-get($colores-redes,"youtube");
-    font-weight: bold;
-}
-
 #somosh2{
     position:absolute;
     top: 150px;
@@ -274,9 +269,13 @@ main h2{
     font-family: 'Roboto Slab';
 }
 
+.select{
+    width: 264px;
+}
+
 .entrada:focus{
     transform: scale(1.1);
-    border: 3px solid #8c9a9e;
+    border: 1px solid #8c9a9e;
     color: black;
 }
 
@@ -608,7 +607,7 @@ input[type=radio]:checked + label {
     /* PÁGINA FORMULARIO */
 
     #imagen-formulario img{
-        width: 400px;
+        width: 300px;
         margin: 30px;
         margin-top: 90px;
     }
@@ -676,6 +675,17 @@ input[type=radio]:checked + label {
 
     .main__entrada-titulo{
         font-size: 68px;
+    }
+
+    // TIENDAS
+
+    .tienda{
+        width: 420px;
+    }
+
+    // FORMULARIO 
+    #imagen-formulario img{
+        width: 500px;
     }
 
     /* Imagen */
